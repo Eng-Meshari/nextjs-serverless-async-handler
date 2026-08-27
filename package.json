@@ -1,0 +1,56 @@
+{
+  "name": "nextjs-serverless-async-handler",
+  "version": "1.0.0",
+  "description": "A robust pattern and utility for handling background tasks in Next.js serverless environments using the native after() API to prevent silent execution drops.",
+  "author": "Meshari Alotaibe",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/safe-after.js",
+  "types": "./dist/safe-after.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/safe-after.d.ts",
+      "import": "./dist/safe-after.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run typecheck && npm run build"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eng-Meshari/nextjs-serverless-async-handler.git"
+  },
+  "homepage": "https://github.com/Eng-Meshari/nextjs-serverless-async-handler#readme",
+  "bugs": {
+    "url": "https://github.com/Eng-Meshari/nextjs-serverless-async-handler/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "next": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "next": "^16.0.0",
+    "typescript": "^5.9.0"
+  },
+  "keywords": [
+    "nextjs",
+    "serverless",
+    "background-tasks",
+    "after",
+    "typescript"
+  ]
+}
