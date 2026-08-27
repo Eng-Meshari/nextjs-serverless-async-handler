@@ -87,7 +87,7 @@ npm run typecheck
 Requirements:
 
 - Next.js 16 or later
-- Node.js 20.9 or later
+- Node.js 22 or later
 - a Server Component, Server Function, Route Handler, or Proxy context that supports `after()`
 - a deployment adapter that supports `after()` and an invocation limit long enough for the task
 
