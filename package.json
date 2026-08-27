@@ -21,6 +21,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "prepack": "npm run typecheck && npm run build"
   },
@@ -44,7 +45,8 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "next": "^16.0.0",
-    "typescript": "^5.9.0"
+    "typescript": "^5.9.0",
+    "vitest": "^4.1.11"
   },
   "keywords": [
     "nextjs",
