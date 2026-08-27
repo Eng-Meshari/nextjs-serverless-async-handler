@@ -24,6 +24,7 @@
     "clean": "node scripts/clean.mjs",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
+    "verify:package": "node scripts/verify-package.mjs",
     "prepack": "npm run typecheck && npm run build"
   },
   "engines": {
