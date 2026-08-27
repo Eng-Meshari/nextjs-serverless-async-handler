@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Next.js 16+](https://img.shields.io/badge/Next.js-16%2B-black?logo=next.js)](https://nextjs.org/)
+[![Next.js 16.x](https://img.shields.io/badge/Next.js-16.x-black?logo=next.js)](https://nextjs.org/)
 [![ESM](https://img.shields.io/badge/modules-ESM-blue)](https://nodejs.org/api/esm.html)
 
 A small, strictly typed wrapper and reference implementation for running post-response work in Next.js serverless handlers with the native [`after()`](https://nextjs.org/docs/app/api-reference/functions/after) API.
@@ -45,7 +45,7 @@ The real requirement is to tell the runtime: **send the response now, but keep t
 
 ## The solution
 
-Next.js `after()` has been stable since Next.js 15.1; this package deliberately targets Next.js 16 and later. The API registers work that executes after the response finishes while keeping it attached to the framework-managed request lifecycle.
+Next.js `after()` has been stable since Next.js 15.1; this package deliberately targets Next.js 16.x. The API registers work that executes after the response finishes while keeping it attached to the framework-managed request lifecycle.
 
 ```ts
 import { after } from "next/server";
@@ -86,7 +86,7 @@ npm run typecheck
 
 Requirements:
 
-- Next.js 16 or later
+- Next.js 16.x
 - Node.js 22 or later
 - a Server Component, Server Function, Route Handler, or Proxy context that supports `after()`
 - a deployment adapter that supports `after()` and an invocation limit long enough for the task

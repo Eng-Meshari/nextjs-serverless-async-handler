@@ -17,7 +17,7 @@ const defaultErrorLogger: SafeAfterErrorLogger = (err: any): void => {
  * as `void sendEmail()` is invisible to that lifecycle and can be interrupted
  * without completing or surfacing its rejection.
  *
- * Next.js 16+'s native `after()` API gives the runtime ownership of the
+ * The native `after()` API in Next.js 16 gives the runtime ownership of the
  * callback. This wrapper returns the task's awaited promise from that callback,
  * allowing the runtime to track it after the response has completed. It also
  * contains both synchronous task throws and asynchronous task rejections so a
