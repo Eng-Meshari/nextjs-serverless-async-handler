@@ -224,4 +224,4 @@ The function returns immediately. The supplied task runs through the lifecycle m
 
 ## License
 
-[MIT](./LICENSE) © Meshari Alotaibe
+[MIT](./LICENSE) © Meshari
